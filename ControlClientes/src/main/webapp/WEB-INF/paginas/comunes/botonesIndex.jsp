@@ -6,10 +6,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3">
-                                <a href="#" class="btn btn-secondary btn-lg btn-block"
-                                    data-toggle="modal" data-target="#agregarClienteModal">
-                                     Clientes 
-                                </a>
+                                <a href="clientes.jsp" class="btn btn-secondary btn-lg btn-block">Clientes</a>
                             </div>
                         </div>
                     </div>
@@ -18,10 +15,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3">
-                                <a href="#" class="btn btn-secondary btn-lg btn-block"
-                                    data-toggle="modal" data-target="#agregarClienteModal">
-                                Compras 
-                                </a>
+                                <a href="compras.jsp" class="btn btn-secondary btn-lg btn-block">Compras</a>
                             </div>
                         </div>
                     </div>
