@@ -16,11 +16,7 @@
 
         <title>Control de Compras</title>
     </head>
-    <body>
-        <!-- Prueba de listado compras -->
-        <c:forEach var="cliente" items="${clientes}">
-        <li>${cliente.idCliente} ${cliente.nombre} ${cliente.saldo}</li>            
-        </c:forEach>  
+    <body> 
     <!--Cabecero-->
     <jsp:include page="/WEB-INF/paginas/comunes/cabeceroCompras.jsp"/>
 
