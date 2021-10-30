@@ -1,8 +1,8 @@
 <div class="modal fade" id="agregarClienteModal">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header bg-info text-white">
-                <h5 class="modal-title">Añadir Compra</h5> 
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title">Add Compra</h5> 
                 <button class="close" data-dismiss="modal">
                     <span>&times;</span>
                 </button>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Guardar</button>
+                    <button class="btn btn-secondary" type="submit">Guardar</button>
                 </div>    
             </form>
         </div>

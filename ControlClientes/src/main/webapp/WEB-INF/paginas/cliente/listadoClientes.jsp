@@ -43,7 +43,7 @@
 
             <!--Inicio Tarjetas para los totales-->
             <div class="col-md-3">
-                <div class="card text-center bg-danger text-white mb-3">
+                <div class="card text-center bg-dark text-white mb-3">
                     <div class="card-body">
                         <h3>Saldo Total</h3>
                         <h4 class="display-4">

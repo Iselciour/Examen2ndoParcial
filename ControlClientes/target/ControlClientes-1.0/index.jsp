@@ -14,17 +14,24 @@
         <!-- Libreria de fontawesome -->
         <script src="https://kit.fontawesome.com/bc1817dbc5.js" crossorigin="anonymous"></script>
 
-        <title>Control de Compras</title>
+        <title>Control de Clientes</title>
     </head>
-    <body> 
+    <body>
+        <!-- Prueba de listado clientes -->
+        <c:forEach var="cliente" items="${clientes}">
+        <li>${cliente.idCliente} ${cliente.nombre} ${cliente.saldo}</li>            
+        </c:forEach>  
     <!--Cabecero-->
-    <jsp:include page="/WEB-INF/paginas/comunes/cabeceroCompras.jsp"/>
+    <jsp:include page="/WEB-INF/paginas/comunes/cabecero.jsp"/>
 
+    <br>
+    
+    <br>
+    <!--Listado Clientes -->
+    <jsp:include page="/WEB-INF/paginas/cliente/listadoClientes.jsp"/>
+    
     <!--Botones de navegacion-->
     <jsp:include page="/WEB-INF/paginas/comunes/botonesNavegacion.jsp"/>
-
-    <!--Listado Compras -->
-    <jsp:include page="/WEB-INF/paginas/cliente/listadoClientes.jsp"/>
 
     <!--Pie de Pagina-->
     <jsp:include page="/WEB-INF/paginas/comunes/piePagina.jsp"/>

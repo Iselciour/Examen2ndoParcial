@@ -24,11 +24,11 @@
     <!--Cabecero-->
     <jsp:include page="/WEB-INF/paginas/comunes/cabeceroCompras.jsp"/>
 
-    <!--Botones de navegacion-->
-    <jsp:include page="/WEB-INF/paginas/comunes/botonesNavegacion.jsp"/>
-
     <!--Listado Compras -->
     <jsp:include page="/WEB-INF/paginas/compras/listadoCompras.jsp"/>
+    
+    <!--Botones de navegacion-->
+    <jsp:include page="/WEB-INF/paginas/comunes/botonesNavegacion.jsp"/>
 
     <!--Pie de Pagina-->
     <jsp:include page="/WEB-INF/paginas/comunes/piePagina.jsp"/>

@@ -16,15 +16,19 @@
 
         <title>Control de Compras</title>
     </head>
-    <body> 
+    <body>
+        <!-- Prueba de listado compras -->
+        <c:forEach var="cliente" items="${clientes}">
+        <li>${cliente.idCliente} ${cliente.nombre} ${cliente.saldo}</li>            
+        </c:forEach>  
     <!--Cabecero-->
     <jsp:include page="/WEB-INF/paginas/comunes/cabeceroCompras.jsp"/>
 
+    <!--Listado Compras -->
+    <jsp:include page="/WEB-INF/paginas/compras/listadoCompras.jsp"/>
+    
     <!--Botones de navegacion-->
     <jsp:include page="/WEB-INF/paginas/comunes/botonesNavegacion.jsp"/>
-
-    <!--Listado Compras -->
-    <jsp:include page="/WEB-INF/paginas/cliente/listadoClientes.jsp"/>
 
     <!--Pie de Pagina-->
     <jsp:include page="/WEB-INF/paginas/comunes/piePagina.jsp"/>

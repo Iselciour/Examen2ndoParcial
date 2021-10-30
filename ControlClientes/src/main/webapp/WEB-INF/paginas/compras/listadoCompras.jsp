@@ -47,5 +47,5 @@
 </section>
 
 <!-- Agregar compra MODAL -->
-<jsp:include page="/WEB-INF/paginas/compra/agregarCompra.jsp"/>
+<jsp:include page="/WEB-INF/paginas/compras/agregarCompras.jsp"/>
                         
