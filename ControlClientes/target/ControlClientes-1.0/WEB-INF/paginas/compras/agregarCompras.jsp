@@ -14,11 +14,11 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="nombre">IdCliente</label>
-                        <input type="text" class="form-control" name="nombre" required>
+                        <input type="text" class="form-control" name="idcliente" required>
                     </div>
                     <div class="form-group">
                         <label for="apellido">Monto</label>
-                        <input type="text" class="form-control" name="apellido" required>
+                        <input type="text" class="form-control" name="monto" required>
                     </div>
                 </div>
                 <div class="modal-footer">

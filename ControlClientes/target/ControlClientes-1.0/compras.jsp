@@ -18,11 +18,15 @@
     </head>
     <body>
         <!-- Prueba de listado compras -->
-        <c:forEach var="cliente" items="${clientes}">
-        <li>${cliente.idCliente} ${cliente.nombre} ${cliente.saldo}</li>            
+        <c:forEach var="compra" items="${compras}">
+        <li>${compra.idCompra} ${compra.idcliente} ${compra.monto}</li>            
         </c:forEach>  
     <!--Cabecero-->
     <jsp:include page="/WEB-INF/paginas/comunes/cabeceroCompras.jsp"/>
+
+    <br>
+    
+    <br>
 
     <!--Listado Compras -->
     <jsp:include page="/WEB-INF/paginas/compras/listadoCompras.jsp"/>
