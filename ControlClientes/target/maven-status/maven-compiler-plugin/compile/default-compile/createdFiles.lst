@@ -1,1 +1,4 @@
+web\ServletControlador.class
 dominio\Cliente.class
+datos\ClienteDaoJDBC.class
+datos\Conexion.class

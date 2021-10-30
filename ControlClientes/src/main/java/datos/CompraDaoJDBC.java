@@ -23,8 +23,8 @@ public class CompraDaoJDBC {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        Compra cliente = null;
-        List<Compra> clientes = new ArrayList<>();
+        Compra compra = null;
+        List<Compra> compras = new ArrayList<>();
         try {
             conn = Conexion.getConnection();
             stmt = conn.prepareStatement(SQL_SELECT);
@@ -44,7 +44,7 @@ public class CompraDaoJDBC {
             Conexion.close(stmt);
             Conexion.close(conn);
         }
-        return clientes;
+        return compras;
     }
 
     public Compra encontrar(Compra compra) {
@@ -58,10 +58,10 @@ public class CompraDaoJDBC {
             rs = stmt.executeQuery();
             rs.absolute(1);//nos posicionamos en el primer registro devuelto
 
-            int nombre = rs.getInt("idcliente");
-            float apellido = rs.getFloat("monto");
+            int idcliente = rs.getInt("idcliente");
+            float monto = rs.getFloat("monto");
 
-            compra.setIdCliente(idcliente);
+            compra.setIdCompra(idcliente);
             compra.setMonto(monto);
 
         } catch (SQLException ex) {
@@ -101,8 +101,8 @@ public class CompraDaoJDBC {
         try {
             conn = Conexion.getConnection();
             stmt = conn.prepareStatement(SQL_UPDATE);
-            stmt.setString(1, compra.getIdCliente());
-            stmt.setString(2, compra.getMonto());
+            stmt.setInt(1, compra.getIdCliente());
+            stmt.setFloat(2, compra.getMonto());
             stmt.setInt(3, compra.getIdCompra());
 
             rows = stmt.executeUpdate();

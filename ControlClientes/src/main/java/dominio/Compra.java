@@ -36,7 +36,7 @@ public class Compra {
         return idcliente;
     }
 
-    public void setNombre(int idcliente) {
+    public void setIdCliente(int idcliente) {
         this.idcliente = idcliente;
     }
 
@@ -44,7 +44,7 @@ public class Compra {
         return monto;
     }
 
-    public void setMonto(int monto) {
+    public void setMonto(float monto) {
         this.monto = monto;
     }
     
