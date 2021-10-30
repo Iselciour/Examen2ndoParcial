@@ -14,7 +14,7 @@
         <!--Cabecero-->
         <jsp:include page="/WEB-INF/paginas/comunes/cabeceroCompras.jsp"/>
 
-        <form action="${pageContext.request.contextPath}/ServletControlador?accion=modificar&idCliente=${cliente.idCliente}"
+        <form action="${pageContext.request.contextPath}/ServletControladorCompras?accion=modificar&idCompras=${compra.idcompra}"
               method="POST" class="was-validated">
 
             <!--Botones de Navegacion -->
@@ -31,11 +31,11 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="nombre">IdCliente</label>
-                                        <input type="text" class="form-control" name="nombre" required value="${cliente.nombre}">
+                                        <input type="text" class="form-control" name="nombre" required value="${compra.idcompra}">
                                     </div>
                                     <div class="form-group">
                                         <label for="apellido">Monto</label>
-                                        <input type="text" class="form-control" name="apellido" required value="${cliente.apellido}">
+                                        <input type="text" class="form-control" name="apellido" required value="${compra.monto}">
                                     </div>
                                 </div>
                             </div>

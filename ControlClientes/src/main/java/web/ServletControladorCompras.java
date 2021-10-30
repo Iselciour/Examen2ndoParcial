@@ -46,7 +46,7 @@ public class ServletControladorCompras extends HttpServlet {
         HttpSession sesion = request.getSession();
         sesion.setAttribute("compras", compras);
         sesion.setAttribute("totalCompras", compras.size());
-        sesion.setAttribute("duedoTotal", this.calcularSaldoTotal(compras));
+        sesion.setAttribute("duedaTotal", this.calcularSaldoTotal(compras));
         request.getRequestDispatcher("compras.jsp").forward(request, response);
         response.sendRedirect("compras.jsp");
     }
@@ -61,7 +61,7 @@ public class ServletControladorCompras extends HttpServlet {
 
     private void editarCompra(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int idCompra = Integer.parseInt(request.getParameter("idCompra"));
+        int idCompra = Integer.parseInt(request.getParameter("idcompra"));
         Compra compra = new CompraDaoJDBC().encontrar(new Compra(idCompra));
         request.setAttribute("compra", compra);
         String jspEditar = "/WEB-INF/paginas/compras/editarCompras.jsp";
@@ -92,7 +92,7 @@ public class ServletControladorCompras extends HttpServlet {
     private void insertarCompra(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //recuperamos los valores del formulario agregarCompra
-        int idCliente = Integer.parseInt(request.getParameter("idCliente"));
+        int idCliente = Integer.parseInt(request.getParameter("idcliente"));
         float monto = 0;
         String montoString = request.getParameter("monto");
         if (montoString != null && !"".equals(montoString)) {
@@ -112,8 +112,8 @@ public class ServletControladorCompras extends HttpServlet {
     private void modificarCompra(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //recuperamos los valores del formulario editarCompra
-        int idCompra = Integer.parseInt(request.getParameter("idCompra"));
-        int idCliente = Integer.parseInt(request.getParameter("idCliente"));
+        int idCompra = Integer.parseInt(request.getParameter("idcompra"));
+        int idCliente = Integer.parseInt(request.getParameter("idcliente"));
         float monto = 0;
         String montoString = request.getParameter("monto");
         if (montoString != null && !"".equals(montoString)) {
@@ -133,7 +133,7 @@ public class ServletControladorCompras extends HttpServlet {
         private void eliminarCompra(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //recuperamos los valores del formulario editarCompra
-        int idCompra = Integer.parseInt(request.getParameter("idCompra"));
+        int idCompra = Integer.parseInt(request.getParameter("idcompra"));
      
 
         Compra compra = new Compra(idCompra);

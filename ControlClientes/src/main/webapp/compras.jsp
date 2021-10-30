@@ -1,4 +1,4 @@
-<!--<meta http-equiv="refresh" content="0;url=${pageContext.request.contextPath}/ServletControlador"> --!>
+<!--<meta http-equiv="refresh" content="0;url=${pageContext.request.contextPath}/ServletControladorCompras"> --!>
 <!--Numero de segundos para enviar al servlet  -->
 
 
@@ -19,7 +19,7 @@
     <body>
         <!-- Prueba de listado compras -->
         <c:forEach var="compra" items="${compras}">
-        <li>${compra.idCompra} ${compra.idcliente} ${compra.monto}</li>            
+        <li>${compra.idcompra} ${compra.idcliente} ${compra.monto}</li>            
         </c:forEach>  
     <!--Cabecero-->
     <jsp:include page="/WEB-INF/paginas/comunes/cabeceroCompras.jsp"/>

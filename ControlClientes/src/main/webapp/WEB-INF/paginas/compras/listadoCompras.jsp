@@ -22,13 +22,13 @@
                         </thead>
                         <tbody>                            
                             <!-- Iteramos cada elemento de la lista de compras -->
-                            <c:forEach var="cliente" items="${clientes}" varStatus="status" >
+                            <c:forEach var="compra" items="${compras}" varStatus="status" >
                                 <tr>
                                     <td>${status.count}</td>
                                     <td>${compra.idcliente} ${compra.monto}</td>
                                     
                                     <td>
-                                        <a href="${pageContext.request.contextPath}/ServletControlador?accion=editar&idCliente=${cpmpra.idcliente}"
+                                        <a href="${pageContext.request.contextPath}/ServletControladorCompras?accion=editar&idCompra=${compra.idcompra}"
                                            class="btn btn-secondary">
                                             <i class="fas fa-angle-double-right"></i> Editar
                                         </a>
