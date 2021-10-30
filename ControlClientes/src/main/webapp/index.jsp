@@ -7,14 +7,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Main</title>
+        <title>Placeholder</title>
     </head>
     <body>
-        <h1>Hotel Project</h1>
+        <h1>Placeholder</h1>
         <br>
-        <a href="set.jsp">Reservar</a>
+        <a href="set.jsp">Placeholder</a>
         <br>
-        <a href="get.jsp">Consultar</a>
+        <a href="get.jsp">Placeholder</a>
         <br>
         
     </body>
